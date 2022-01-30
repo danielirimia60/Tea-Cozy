@@ -1,0 +1,292 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Module Styles
+  5. Component Styles
+  6. Page Styles
+  7. Mdia Querries
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+}
+body {
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 2. Typography Styles
+======================================== */
+
+header li a {
+    color: seashell;
+    opacity: 0.9;
+    padding: .5em;
+    font-size: 1rem;
+}
+header li a:hover {
+    color: hsl(25, 25%, 80%);
+    text-decoration: none;
+}
+header li a:active {
+    color: hsl(25, 25%, 50%);
+    font-size: .98rem;
+    transition: font-size 300ms, color 300ms ease-out;
+}
+.mission-text h2,
+.mission-text h4,
+.tea-text h2,
+.tea-text h4,
+.locations-content h2,
+.picture-container h4 {
+    margin: 0 auto;
+    padding: .5em;
+    text-align: center;
+}
+.mission-text h2,
+.tea-text h2,
+.locations-content h2 {
+    font-size: 1.5rem;
+}
+.mission-text h4,
+.tea-text h4 {
+    font-size: 1rem;
+}
+.location h3,
+.location p {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em;
+}
+.location p {
+    font-size: .9rem;
+}
+.contact {
+    text-align: center;
+}
+.contact h2 {
+    font-size: 2rem;
+}
+/* 3. Structure Styles
+======================================== */
+
+nav {
+    position: relative;
+    right: .5em;
+}
+header li {
+    list-style: none;
+    display: inline-block;
+}
+
+/* 4. Modules Styles
+======================================== */
+
+/* --------- Navigation ------------ */
+header {
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 3.13em;
+    margin: 0 auto;
+    border-bottom: 1px solid seashell;
+    background: hsla(0, 0%, 0%, 0.9);
+    backdrop-filter: blur(5px);
+}
+.nav-wrap {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ----------- Mission -------- */
+
+.mission {
+    position: relative;
+    top: 3.1em;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    height: 31.81rem;
+    background-image: url(./Images/img-mission-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------- Tea of the Month ---------- */
+
+.tea {
+    position: relative;
+    top: 3.1em;
+    margin: 3% auto;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -------- Locations ------- */
+
+.locations {
+    position: relative;
+    top: 3.1em;
+    margin: 3% auto;
+    width: 100%;
+    max-width: 1200px;
+    height: 24.72rem;
+    background-image: url(./Images/img-locations-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* --------- Footer ---------- */
+
+footer {
+    margin: -2% auto 4%;
+    position: relative;
+    top: 3.1em;
+    width: 100%;
+}
+
+/* 5. Component Styles
+======================================== */
+
+/* ------- Items ------- */
+.logo-wrap img {
+    height: 100%;
+}
+.picture-container img {
+    width: 13.63rem;
+    height: 9.09rem;
+    padding-bottom: 0.45em;
+}
+
+/* 6. Page Styles
+======================================== */
+
+.logo-wrap {
+    height: 2.27rem;
+    margin-left: 0.45em;
+}
+main {
+    margin: 0 auto;
+    position: relative;
+}
+.mission, .tea, .locations {
+    overflow-y: hidden;
+}
+.mission-text {
+    width: 100%;
+    margin: auto auto;
+    background: black;
+}
+.tea-text {
+    margin-bottom: 1em;
+}
+.tea-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.2em;
+    justify-content: center;
+}
+.picture-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.locations-content {
+    margin: 0 auto;
+}
+.locations-wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 1.81em;
+    opacity: 1;
+    margin: 1%;
+}
+.location {
+    width: 13.63rem;
+    background-color: black;
+}
+.contact {
+    margin: 0 auto;
+}
+.copy {
+    margin-left: .9rem;
+}
+
+/* 7. Media Querries
+======================================== */
+
+@media only screen and (max-width: 1600px) {
+    html {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 1570px) {
+    footer {
+        margin-bottom: 8%;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .locations {
+        height: 30rem;
+    }
+    footer {
+        margin-bottom: 15%;
+    }
+}
+@media only screen and (max-width: 818px) {
+    .locations {
+        height: 40rem;
+    }
+    nav {
+        right: 1em;
+    }
+}
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 16px;
+    }
+}
