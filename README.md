@@ -3,5 +3,5 @@
 </p>
 <br>
 <p align="center">
-  <a href="https://danielirimia60.github.io/Tea-Cozy-Project/" style="color: seashell;"> > > Link Here < < </a>
+  <a href="https://danielirimia60.github.io/Tea-Cozy-Project/" > > > Link Here < < </a>
 </p>
